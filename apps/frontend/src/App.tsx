@@ -10,6 +10,7 @@ import TasksPage from "./pages/TasksPage";
 import AuthPage from "./pages/AuthPage";
 import MainLayout from "./layouts/MainLayout";
 import LandingPage from "./pages/LandingPage";
+import TaskDetailsPage from "./pages/TaskDetailsPage";
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path={routePaths.DASHBOARD} element={<DashboardPage />} />
           <Route path={routePaths.TASKS} element={<TasksPage />} />
+          <Route
+            path={`${routePaths.TASKS}/:taskId`}
+            element={<TaskDetailsPage />}
+          />
         </Route>
         <Route path="*" element={<Navigate to={routePaths.DASHBOARD} />} />
       </Routes>

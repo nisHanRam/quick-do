@@ -1,3 +1,4 @@
+import Logo from "@/components/common/Logo";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -14,10 +15,7 @@ const LandingPage = () => {
     <div className="min-h-screen font-sans">
       {/* Navigation */}
       <nav className="flex items-center justify-between p-6 max-w-7xl mx-auto">
-        <div className="flex items-center space-x-2">
-          <CheckCircle className="h-8 w-8" />
-          <span className="text-2xl font-bold">QuickDo</span>
-        </div>
+        <Logo />
         <div className="flex items-center space-x-4">
           <Link to={routePaths.AUTH}>
             <Button variant="ghost">Sign In</Button>
