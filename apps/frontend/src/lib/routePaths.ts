@@ -1,5 +1,6 @@
 export const routePaths = {
-  DASHBOARD: "/",
+  LANDING: "/",
+  DASHBOARD: "/dashboard",
   AUTH: "/auth",
   TASKS: "/tasks",
 };

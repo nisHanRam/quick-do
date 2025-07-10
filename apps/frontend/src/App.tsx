@@ -9,12 +9,14 @@ import DashboardPage from "./pages/DashboardPage";
 import TasksPage from "./pages/TasksPage";
 import AuthPage from "./pages/AuthPage";
 import MainLayout from "./layouts/MainLayout";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path={routePaths.AUTH} element={<AuthPage />} />
+        <Route path={routePaths.LANDING} element={<LandingPage />} />
         <Route element={<MainLayout />}>
           <Route path={routePaths.DASHBOARD} element={<DashboardPage />} />
           <Route path={routePaths.TASKS} element={<TasksPage />} />
